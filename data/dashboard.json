@@ -1,0 +1,45 @@
+{
+  "updated_at": "2026-07-26",
+  "checklist": [
+    { "text": "제품 상세페이지 링크 오류 수정 (파일명 불일치)", "done": true },
+    { "text": "about.html 핵심 철학 문구 최신화", "done": true },
+    { "text": "robots.txt / sitemap.xml 추가", "done": true },
+    { "text": "OG/Twitter 메타태그 전 페이지 추가", "done": true },
+    { "text": "canonical URL 자기 참조(self-canonical)로 수정", "done": true },
+    { "text": "GitHub Pages 배포 (bomb-boop.github.io/extractlibrary-site)", "done": true },
+    { "text": "Google Search Console 사이트 등록 — 사용자 직접 진행 필요 (인증 토큰 발급 후 요청 시 meta 태그 반영)", "done": false },
+    { "text": "네이버 서치어드바이저 사이트 등록 — 사용자 직접 진행 필요 (인증 토큰 발급 후 요청 시 meta 태그 반영)", "done": false },
+    { "text": "매일 초안 자동 생성 크론 자동화 연결", "done": false },
+    { "text": "커스텀 도메인 연결 검토 (선택)", "done": false }
+  ],
+  "ai_log": [],
+  "drafts": [],
+  "brand": {
+    "상호명": "어니스트앤코 (Honest&Co.)",
+    "브랜드명": "EXTRACT LIBRARY (엑스트랙트 라이브러리)",
+    "대표자": "이정민",
+    "설립": "2024년 · 서울",
+    "사업자등록번호": "217-67-00483",
+    "통신판매업": "2024-서울강서-2502",
+    "고객센터": "070-8064-0761 · editor@extractlibrary.co.kr",
+    "판매 채널": "자사몰(extractlibrary.co.kr) · 쿠팡 · 네이버 스마트스토어",
+    "사이트 저장소": "https://github.com/bomb-boop/extractlibrary-site",
+    "배포 URL": "https://bomb-boop.github.io/extractlibrary-site/"
+  },
+  "products": [
+    {
+      "name": "EX·001 병풀 클렌징 워터",
+      "price": "26,000원 / 300mL",
+      "key_ingredients": "병풀, 과일 컴플렉스, 쇠비름 추출물, 베타인",
+      "clinical": "피부자극지수 0.00 (2024.6.12–6.14, N=33)",
+      "page": "products/byeongpul-cleansing-water.html"
+    },
+    {
+      "name": "EX·002 어성초 진정 토너",
+      "price": "30,000원 / 300mL",
+      "key_ingredients": "어성초, 판테놀, 저분자 히알루론산, 알란토인",
+      "clinical": "피부자극지수 0.00 (2024.6.12–6.14, N=33)",
+      "page": "products/eoseongcho-toner.html"
+    }
+  ]
+}

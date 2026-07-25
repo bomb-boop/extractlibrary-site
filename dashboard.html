@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>운영 대시보드 — EXTRACT LIBRARY</title>
+<meta name="robots" content="noindex, nofollow">
+<link rel="stylesheet" href="style.css">
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,500;9..144,600&family=IBM+Plex+Mono:wght@400;500&family=Work+Sans:wght@400;500&display=swap" rel="stylesheet">
+<style>
+.tabs { display:flex; gap:4px; margin-bottom:22px; border-bottom:1px solid var(--rule); flex-wrap:wrap; }
+.tab-btn {
+  font-family:'IBM Plex Mono',monospace; font-size:0.76rem; text-transform:uppercase; letter-spacing:0.04em;
+  background:none; border:none; padding:10px 14px; cursor:pointer; color:var(--ink-soft);
+  border-bottom:2px solid transparent; margin-bottom:-1px;
+}
+.tab-btn.active { color:var(--forest); border-color:var(--gold); }
+.panel { display:none; }
+.panel.active { display:block; }
+.card { background:#fff; border:1px solid var(--rule); border-radius:2px; padding:16px 18px; margin-bottom:10px; }
+.check-item { display:flex; align-items:center; gap:10px; padding:10px 0; border-bottom:1px solid var(--rule); }
+.check-item:last-child { border-bottom:none; }
+.check-item .dot { width:9px; height:9px; border-radius:50%; flex-shrink:0; }
+.check-item.done .dot { background:var(--sage); }
+.check-item:not(.done) .dot { background:var(--gold); }
+.check-item.done span.txt { text-decoration:line-through; color:var(--ink-soft); }
+.log-item, .idea-item { padding:12px 0; border-bottom:1px solid var(--rule); }
+.log-item:last-child, .idea-item:last-child { border-bottom:none; }
+.log-meta { font-family:'IBM Plex Mono',monospace; font-size:0.7rem; color:var(--ink-soft); margin-bottom:4px; display:flex; gap:8px; align-items:center; }
+.badge { font-family:'IBM Plex Mono',monospace; font-size:0.68rem; padding:2px 8px; border-radius:2px; }
+.badge.yes { background:#E4EBE2; color:#4C6B4F; }
+.badge.no { background:#F1E4D8; color:#A9803D; }
+.empty { color:var(--ink-soft); font-size:0.88rem; padding:16px 0; }
+.note { font-size:0.85rem; color:var(--ink-soft); margin-bottom:18px; max-width:64ch; }
+</style>
+</head>
+<body>
+
+<header class="site">
+  <div class="wrap">
+    <a href="index.html" class="logo">EXTRACT<span class="dot"> · </span>LIBRARY</a>
+    <nav class="primary">
+      <a href="index.html">Index</a>
+      <a href="about.html">Brand</a>
+      <a href="blog/index.html">Journal</a>
+      <a href="faq.html">FAQ</a>
+    </nav>
+  </div>
+</header>
+
+<section class="hero" style="padding-bottom:24px;">
+  <div class="wrap">
+    <span class="eyebrow">Internal · Not indexed</span>
+    <h1>운영 대시보드</h1>
+    <p class="lede">AI/검색 노출 작업 현황, AI 노출 테스트 기록, 검수 대기 초안을 정리합니다.</p>
+  </div>
+</section>
+
+<section style="padding-top:0;">
+  <div class="wrap">
+    <p class="note">이 페이지는 읽기 전용입니다. 데이터는 저장소의 <code>data/dashboard.json</code> 파일에서 불러오며, 갱신은 대화를 통해 요청하거나 자동화가 커밋할 때 반영됩니다.</p>
+
+    <div class="tabs">
+      <button class="tab-btn active" data-tab="checklist">체크리스트</button>
+      <button class="tab-btn" data-tab="ailog">AI 노출 기록</button>
+      <button class="tab-btn" data-tab="drafts">검수 대기 초안</button>
+      <button class="tab-btn" data-tab="brand">브랜드/제품</button>
+    </div>
+
+    <div class="panel active" id="panel-checklist">
+      <div class="card" id="chk-list"><p class="empty">불러오는 중…</p></div>
+    </div>
+
+    <div class="panel" id="panel-ailog">
+      <div class="card" id="log-list"><p class="empty">불러오는 중…</p></div>
+    </div>
+
+    <div class="panel" id="panel-drafts">
+      <div class="card" id="drafts-list"><p class="empty">불러오는 중…</p></div>
+    </div>
+
+    <div class="panel" id="panel-brand">
+      <div class="card">
+        <h3 style="font-size:1.05rem; margin-bottom:10px;">브랜드 개요</h3>
+        <table class="spec" id="brand-table"></table>
+      </div>
+      <div class="card">
+        <h3 style="font-size:1.05rem; margin-bottom:10px;">제품</h3>
+        <table class="spec" id="products-table"></table>
+      </div>
+    </div>
+
+    <p class="status" id="status" style="font-size:0.78rem; color:var(--ink-soft); margin-top:10px;"></p>
+  </div>
+</section>
+
+<footer class="site">
+  <div class="wrap">
+    <span>어니스트앤코 · EXTRACT LIBRARY · 대표 이정민 · 사업자등록번호 217-67-00483</span>
+    <span>editor@extractlibrary.co.kr</span>
+  </div>
+</footer>
+
+<script>
+function escapeHtml(s) {
+  return (s || '').toString().replace(/[&<>"']/g, c => ({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[c]));
+}
+
+document.querySelectorAll('.tab-btn').forEach(btn => {
+  btn.addEventListener('click', () => {
+    document.querySelectorAll('.tab-btn').forEach(b => b.classList.remove('active'));
+    document.querySelectorAll('.panel').forEach(p => p.classList.remove('active'));
+    btn.classList.add('active');
+    document.getElementById('panel-' + btn.dataset.tab).classList.add('active');
+  });
+});
+
+function renderChecklist(items) {
+  const box = document.getElementById('chk-list');
+  if (!items || !items.length) { box.innerHTML = '<p class="empty">등록된 작업이 없습니다.</p>'; return; }
+  box.innerHTML = items.map(it => `
+    <div class="check-item ${it.done ? 'done' : ''}">
+      <span class="dot"></span>
+      <span class="txt">${escapeHtml(it.text)}</span>
+    </div>`).join('');
+}
+
+function renderLog(items) {
+  const box = document.getElementById('log-list');
+  if (!items || !items.length) { box.innerHTML = '<p class="empty">기록된 AI 노출 테스트가 없습니다.</p>'; return; }
+  box.innerHTML = items.map(it => `
+    <div class="log-item">
+      <div class="log-meta">
+        <span>${escapeHtml(it.date || '')}</span>
+        <span class="mono">${escapeHtml(it.platform || '')}</span>
+        <span class="badge ${it.mentioned === 'yes' ? 'yes' : 'no'}">${it.mentioned === 'yes' ? '언급됨' : '언급 안 됨'}</span>
+      </div>
+      <div><strong>${escapeHtml(it.query || '')}</strong></div>
+      ${it.note ? `<div style="color:var(--ink-soft); font-size:0.86rem; margin-top:4px;">${escapeHtml(it.note)}</div>` : ''}
+    </div>`).join('');
+}
+
+function renderDrafts(items) {
+  const box = document.getElementById('drafts-list');
+  if (!items || !items.length) { box.innerHTML = '<p class="empty">검수 대기 중인 초안이 없습니다.</p>'; return; }
+  box.innerHTML = items.map(it => `
+    <div class="idea-item">
+      <div class="log-meta">
+        <span>${escapeHtml(it.date || '')}</span>
+        <span class="mono">${escapeHtml(it.channel || '')}</span>
+        <span class="badge no">${escapeHtml(it.status || 'pending-review')}</span>
+      </div>
+      <div><strong>${escapeHtml(it.title || '')}</strong></div>
+      ${it.path ? `<div style="color:var(--ink-soft); font-size:0.86rem; margin-top:4px;">${escapeHtml(it.path)}</div>` : ''}
+    </div>`).join('');
+}
+
+function renderTable(id, obj) {
+  const table = document.getElementById(id);
+  table.innerHTML = Object.entries(obj || {}).map(([k, v]) => `<tr><th>${escapeHtml(k)}</th><td>${escapeHtml(v)}</td></tr>`).join('');
+}
+
+function renderProducts(items) {
+  const table = document.getElementById('products-table');
+  if (!items || !items.length) { table.innerHTML = ''; return; }
+  table.innerHTML = items.map(p => `
+    <tr><th>${escapeHtml(p.name)}</th><td>
+      가격: ${escapeHtml(p.price)}<br>
+      핵심 성분: ${escapeHtml(p.key_ingredients)}<br>
+      임상 데이터: ${escapeHtml(p.clinical)}<br>
+      <a href="${escapeHtml(p.page)}">페이지 보기 →</a>
+    </td></tr>`).join('');
+}
+
+fetch('data/dashboard.json')
+  .then(res => res.json())
+  .then(data => {
+    renderChecklist(data.checklist);
+    renderLog(data.ai_log);
+    renderDrafts(data.drafts);
+    renderTable('brand-table', data.brand);
+    renderProducts(data.products);
+    document.getElementById('status').textContent = '마지막 업데이트: ' + (data.updated_at || '-');
+  })
+  .catch(() => {
+    document.getElementById('status').textContent = '데이터를 불러오지 못했습니다. data/dashboard.json을 확인해 주세요.';
+  });
+</script>
+
+</body>
+</html>
