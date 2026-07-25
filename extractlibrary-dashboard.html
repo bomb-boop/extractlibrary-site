@@ -1,0 +1,330 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>EXTRACT LIBRARY — AI 마케팅 대시보드</title>
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,500;9..144,600&family=IBM+Plex+Mono:wght@400;500&family=Work+Sans:wght@400;500&display=swap" rel="stylesheet">
+<style>
+:root {
+  --paper: #F4F0E6; --paper-dim: #EBE5D6; --ink: #211E18; --ink-soft: #4A463C;
+  --forest: #2F3B2C; --amber: #6B4226; --sage: #8B9A7B; --gold: #A9803D; --rule: rgba(33,30,24,0.16);
+  --ok: #4C6B4F; --warn: #A9803D;
+}
+* { box-sizing: border-box; }
+body { margin:0; background:var(--paper); color:var(--ink); font-family:'Work Sans',sans-serif; font-size:15px; }
+h1,h2,h3 { font-family:'Fraunces',serif; color:var(--forest); margin:0; }
+.mono { font-family:'IBM Plex Mono',monospace; }
+.wrap { max-width: 860px; margin:0 auto; padding: 24px 20px 60px; }
+header { padding: 10px 0 20px; border-bottom:1px solid var(--rule); margin-bottom: 18px; }
+header .callnum { font-family:'IBM Plex Mono',monospace; font-size:0.72rem; color:var(--gold); letter-spacing:0.06em; }
+header h1 { font-size:1.5rem; margin-top:6px; }
+
+.tabs { display:flex; gap:4px; margin-bottom:22px; border-bottom:1px solid var(--rule); flex-wrap:wrap; }
+.tab-btn {
+  font-family:'IBM Plex Mono',monospace; font-size:0.76rem; text-transform:uppercase; letter-spacing:0.04em;
+  background:none; border:none; padding:10px 14px; cursor:pointer; color:var(--ink-soft);
+  border-bottom:2px solid transparent; margin-bottom:-1px;
+}
+.tab-btn.active { color:var(--forest); border-color:var(--gold); }
+.panel { display:none; }
+.panel.active { display:block; }
+
+.card { background:#fff; border:1px solid var(--rule); border-radius:2px; padding:16px 18px; margin-bottom:10px; }
+.row { display:flex; gap:10px; align-items:center; }
+.row input[type=text], .row input[type=date], select, textarea {
+  font-family:'Work Sans',sans-serif; font-size:0.9rem; padding:8px 10px; border:1px solid var(--rule);
+  border-radius:2px; background:var(--paper); color:var(--ink); width:100%;
+}
+textarea { resize:vertical; min-height:56px; }
+button.primary {
+  font-family:'IBM Plex Mono',monospace; font-size:0.76rem; text-transform:uppercase; letter-spacing:0.04em;
+  background:var(--forest); color:#fff; border:none; padding:9px 16px; border-radius:2px; cursor:pointer; white-space:nowrap;
+}
+button.primary:hover { background:#23301f; }
+button.ghost {
+  font-family:'IBM Plex Mono',monospace; font-size:0.7rem; background:none; border:1px solid var(--rule);
+  color:var(--ink-soft); padding:5px 10px; border-radius:2px; cursor:pointer;
+}
+button.ghost:hover { border-color:var(--amber); color:var(--amber); }
+
+.check-item { display:flex; align-items:center; gap:10px; padding:10px 0; border-bottom:1px solid var(--rule); }
+.check-item:last-child { border-bottom:none; }
+.check-item input[type=checkbox] { width:18px; height:18px; accent-color:var(--forest); }
+.check-item.done span.txt { text-decoration:line-through; color:var(--ink-soft); }
+.check-item .del { margin-left:auto; }
+
+.badge { font-family:'IBM Plex Mono',monospace; font-size:0.68rem; padding:2px 8px; border-radius:2px; }
+.badge.yes { background:#E4EBE2; color:var(--ok); }
+.badge.no { background:#F1E4D8; color:var(--warn); }
+
+.log-item, .idea-item { padding:12px 0; border-bottom:1px solid var(--rule); }
+.log-item:last-child, .idea-item:last-child { border-bottom:none; }
+.log-meta { font-family:'IBM Plex Mono',monospace; font-size:0.7rem; color:var(--ink-soft); margin-bottom:4px; display:flex; gap:8px; align-items:center; }
+
+table.spec { width:100%; border-collapse:collapse; font-size:0.88rem; }
+table.spec th, table.spec td { text-align:left; padding:8px 10px; border-bottom:1px solid var(--rule); vertical-align:top; }
+table.spec th { width:32%; font-family:'IBM Plex Mono',monospace; font-size:0.7rem; text-transform:uppercase; color:var(--forest); }
+
+.empty { color:var(--ink-soft); font-size:0.88rem; padding:16px 0; }
+.status { font-size:0.78rem; color:var(--ink-soft); margin-top:6px; }
+.grid2 { display:grid; grid-template-columns: 1fr 1fr; gap:8px; }
+@media (max-width:560px){ .grid2 { grid-template-columns: 1fr; } }
+</style>
+</head>
+<body>
+<div class="wrap">
+
+<header>
+  <div class="callnum">EX · DASH — AI MARKETING CONTROL</div>
+  <h1>EXTRACT LIBRARY 대시보드</h1>
+</header>
+
+<div class="tabs">
+  <button class="tab-btn active" data-tab="checklist">체크리스트</button>
+  <button class="tab-btn" data-tab="ailog">AI 노출 기록</button>
+  <button class="tab-btn" data-tab="brand">브랜드/제품</button>
+  <button class="tab-btn" data-tab="ideas">아이디어 뱅크</button>
+</div>
+
+<!-- 체크리스트 -->
+<div class="panel active" id="panel-checklist">
+  <div class="card">
+    <div class="row">
+      <input type="text" id="chk-input" placeholder="새 작업 입력 (예: FAQ 페이지 카페24 게시판에 등록)">
+      <button class="primary" onclick="addChecklist()">추가</button>
+    </div>
+  </div>
+  <div class="card" id="chk-list"><p class="empty">불러오는 중…</p></div>
+</div>
+
+<!-- AI 노출 기록 -->
+<div class="panel" id="panel-ailog">
+  <div class="card">
+    <div class="grid2">
+      <input type="text" id="log-platform" placeholder="AI/검색 서비스 (예: ChatGPT, Perplexity, Gemini)">
+      <input type="text" id="log-query" placeholder="테스트한 질문 (예: 저자극 클렌징워터 추천해줘)">
+    </div>
+    <div class="grid2" style="margin-top:8px;">
+      <select id="log-mentioned">
+        <option value="yes">브랜드 언급됨</option>
+        <option value="no">언급 안 됨</option>
+      </select>
+      <input type="date" id="log-date">
+    </div>
+    <textarea id="log-note" placeholder="비고 (답변 요약, 링크 인용 여부 등)" style="margin-top:8px;"></textarea>
+    <div style="margin-top:10px; text-align:right;"><button class="primary" onclick="addLog()">기록 추가</button></div>
+  </div>
+  <div class="card" id="log-list"><p class="empty">불러오는 중…</p></div>
+</div>
+
+<!-- 브랜드/제품 -->
+<div class="panel" id="panel-brand">
+  <div class="card">
+    <h3 style="font-size:1.05rem; margin-bottom:10px;">브랜드 개요</h3>
+    <table class="spec">
+      <tr><th>상호명</th><td>어니스트앤코</td></tr>
+      <tr><th>브랜드명</th><td>EXTRACT LIBRARY</td></tr>
+      <tr><th>대표자</th><td>이정민</td></tr>
+      <tr><th>설립</th><td>2024년 · 서울</td></tr>
+      <tr><th>사업자등록번호</th><td>217-67-00483</td></tr>
+      <tr><th>통신판매업</th><td>2024-서울강서-2502</td></tr>
+      <tr><th>고객센터</th><td>070-8064-0761 · editor@extractlibrary.co.kr</td></tr>
+      <tr><th>판매 채널</th><td>자사몰(extractlibrary.co.kr) · 쿠팡 · 스마트스토어</td></tr>
+      <tr><th>공식 사이트</th><td>https://extractlibrary.co.kr/</td></tr>
+    </table>
+  </div>
+  <div class="card">
+    <h3 style="font-size:1.05rem; margin-bottom:10px;">EX·001 병풀 클렌징 워터</h3>
+    <table class="spec">
+      <tr><th>가격</th><td>26,000원 / 300mL</td></tr>
+      <tr><th>핵심 성분</th><td>병풀, 과일 컴플렉스, 쇠비름 추출물, 베타인</td></tr>
+      <tr><th>임상 데이터</th><td>피부자극지수 0.00 (2024.6.12–6.14, N=33)</td></tr>
+      <tr><th>URL</th><td>extractlibrary.co.kr/product/병풀-클렌징-워터/12/</td></tr>
+    </table>
+  </div>
+  <div class="card">
+    <h3 style="font-size:1.05rem; margin-bottom:10px;">EX·002 어성초 진정 토너</h3>
+    <table class="spec">
+      <tr><th>가격</th><td>30,000원 / 300mL</td></tr>
+      <tr><th>핵심 성분</th><td>어성초, 판테놀, 저분자 히알루론산, 알란토인</td></tr>
+      <tr><th>임상 데이터</th><td>피부자극지수 0.00 (2024.6.12–6.14, N=33)</td></tr>
+      <tr><th>URL</th><td>extractlibrary.co.kr/product/어성초-진정-토너/11/</td></tr>
+    </table>
+  </div>
+</div>
+
+<!-- 아이디어 뱅크 -->
+<div class="panel" id="panel-ideas">
+  <div class="card">
+    <textarea id="idea-input" placeholder="블로그/콘텐츠 아이디어를 적어두세요 (예: '미셀라 클렌징 원리' 저널 포스트)"></textarea>
+    <div class="grid2" style="margin-top:8px;">
+      <select id="idea-tag">
+        <option value="저널">저널(블로그)</option>
+        <option value="SNS">SNS</option>
+        <option value="FAQ">FAQ</option>
+        <option value="기타">기타</option>
+      </select>
+      <button class="primary" onclick="addIdea()">아이디어 저장</button>
+    </div>
+  </div>
+  <div class="card" id="idea-list"><p class="empty">불러오는 중…</p></div>
+</div>
+
+<div class="status" id="status"></div>
+</div>
+
+<script>
+const KEYS = { checklist: 'ex-dashboard:checklist', ailog: 'ex-dashboard:ailog', ideas: 'ex-dashboard:ideas' };
+
+function setStatus(msg) {
+  const el = document.getElementById('status');
+  el.textContent = msg;
+  if (msg) setTimeout(() => { if (el.textContent === msg) el.textContent = ''; }, 2500);
+}
+
+async function loadArr(key) {
+  try {
+    const res = await window.storage.get(key);
+    return res && res.value ? JSON.parse(res.value) : [];
+  } catch (e) { return []; }
+}
+async function saveArr(key, arr) {
+  try {
+    await window.storage.set(key, JSON.stringify(arr));
+  } catch (e) { setStatus('저장 실패: 다시 시도해 주세요'); }
+}
+function uid() { return Date.now().toString(36) + Math.random().toString(36).slice(2,6); }
+
+// ---- Tabs ----
+document.querySelectorAll('.tab-btn').forEach(btn => {
+  btn.addEventListener('click', () => {
+    document.querySelectorAll('.tab-btn').forEach(b => b.classList.remove('active'));
+    document.querySelectorAll('.panel').forEach(p => p.classList.remove('active'));
+    btn.classList.add('active');
+    document.getElementById('panel-' + btn.dataset.tab).classList.add('active');
+  });
+});
+
+// ---- Checklist ----
+async function renderChecklist() {
+  const items = await loadArr(KEYS.checklist);
+  const box = document.getElementById('chk-list');
+  if (!items.length) { box.innerHTML = '<p class="empty">등록된 작업이 없습니다. 위에서 추가해 보세요.</p>'; return; }
+  box.innerHTML = items.map(it => `
+    <div class="check-item ${it.done ? 'done' : ''}">
+      <input type="checkbox" ${it.done ? 'checked' : ''} onchange="toggleChecklist('${it.id}')">
+      <span class="txt">${escapeHtml(it.text)}</span>
+      <button class="ghost del" onclick="delChecklist('${it.id}')">삭제</button>
+    </div>`).join('');
+}
+async function addChecklist() {
+  const input = document.getElementById('chk-input');
+  const text = input.value.trim();
+  if (!text) return;
+  const items = await loadArr(KEYS.checklist);
+  items.unshift({ id: uid(), text, done: false });
+  await saveArr(KEYS.checklist, items);
+  input.value = '';
+  setStatus('작업이 추가되었습니다');
+  renderChecklist();
+}
+async function toggleChecklist(id) {
+  const items = await loadArr(KEYS.checklist);
+  const it = items.find(i => i.id === id);
+  if (it) it.done = !it.done;
+  await saveArr(KEYS.checklist, items);
+  renderChecklist();
+}
+async function delChecklist(id) {
+  let items = await loadArr(KEYS.checklist);
+  items = items.filter(i => i.id !== id);
+  await saveArr(KEYS.checklist, items);
+  renderChecklist();
+}
+
+// ---- AI Log ----
+async function renderLog() {
+  const items = await loadArr(KEYS.ailog);
+  const box = document.getElementById('log-list');
+  if (!items.length) { box.innerHTML = '<p class="empty">기록된 테스트가 없습니다. 위에서 추가해 보세요.</p>'; return; }
+  box.innerHTML = items.map(it => `
+    <div class="log-item">
+      <div class="log-meta">
+        <span>${escapeHtml(it.date || '')}</span>
+        <span class="mono">${escapeHtml(it.platform || '')}</span>
+        <span class="badge ${it.mentioned === 'yes' ? 'yes' : 'no'}">${it.mentioned === 'yes' ? '언급됨' : '언급 안 됨'}</span>
+        <button class="ghost" style="margin-left:auto;" onclick="delLog('${it.id}')">삭제</button>
+      </div>
+      <div><strong>${escapeHtml(it.query || '')}</strong></div>
+      ${it.note ? `<div style="color:var(--ink-soft); font-size:0.86rem; margin-top:4px;">${escapeHtml(it.note)}</div>` : ''}
+    </div>`).join('');
+}
+async function addLog() {
+  const platform = document.getElementById('log-platform').value.trim();
+  const query = document.getElementById('log-query').value.trim();
+  const mentioned = document.getElementById('log-mentioned').value;
+  const date = document.getElementById('log-date').value || new Date().toISOString().slice(0,10);
+  const note = document.getElementById('log-note').value.trim();
+  if (!platform || !query) { setStatus('AI 서비스와 질문을 입력해 주세요'); return; }
+  const items = await loadArr(KEYS.ailog);
+  items.unshift({ id: uid(), platform, query, mentioned, date, note });
+  await saveArr(KEYS.ailog, items);
+  document.getElementById('log-platform').value = '';
+  document.getElementById('log-query').value = '';
+  document.getElementById('log-note').value = '';
+  setStatus('기록이 저장되었습니다');
+  renderLog();
+}
+async function delLog(id) {
+  let items = await loadArr(KEYS.ailog);
+  items = items.filter(i => i.id !== id);
+  await saveArr(KEYS.ailog, items);
+  renderLog();
+}
+
+// ---- Ideas ----
+async function renderIdeas() {
+  const items = await loadArr(KEYS.ideas);
+  const box = document.getElementById('idea-list');
+  if (!items.length) { box.innerHTML = '<p class="empty">저장된 아이디어가 없습니다. 위에서 추가해 보세요.</p>'; return; }
+  box.innerHTML = items.map(it => `
+    <div class="idea-item">
+      <div class="log-meta">
+        <span class="mono">${escapeHtml(it.tag)}</span>
+        <span>${escapeHtml(it.date)}</span>
+        <button class="ghost" style="margin-left:auto;" onclick="delIdea('${it.id}')">삭제</button>
+      </div>
+      <div>${escapeHtml(it.text)}</div>
+    </div>`).join('');
+}
+async function addIdea() {
+  const text = document.getElementById('idea-input').value.trim();
+  const tag = document.getElementById('idea-tag').value;
+  if (!text) return;
+  const items = await loadArr(KEYS.ideas);
+  items.unshift({ id: uid(), text, tag, date: new Date().toISOString().slice(0,10) });
+  await saveArr(KEYS.ideas, items);
+  document.getElementById('idea-input').value = '';
+  setStatus('아이디어가 저장되었습니다');
+  renderIdeas();
+}
+async function delIdea(id) {
+  let items = await loadArr(KEYS.ideas);
+  items = items.filter(i => i.id !== id);
+  await saveArr(KEYS.ideas, items);
+  renderIdeas();
+}
+
+function escapeHtml(s) {
+  return (s || '').replace(/[&<>"']/g, c => ({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[c]));
+}
+
+// init
+document.getElementById('log-date').value = new Date().toISOString().slice(0,10);
+renderChecklist();
+renderLog();
+renderIdeas();
+</script>
+</body>
+</html>
