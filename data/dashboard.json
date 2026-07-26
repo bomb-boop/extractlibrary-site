@@ -1,5 +1,14 @@
 {
   "updated_at": "2026-07-26",
+  "drafts": [
+    {
+      "date": "2026-07-26",
+      "channel": "sns",
+      "title": "하루의 마무리, 어성초 진정 토너 인스타그램 카피",
+      "status": "pending-review",
+      "path": "drafts/2026-07-26-eoseongcho-toner-evening-ritual.md"
+    }
+  ],
   "checklist": [
     { "text": "제품 상세페이지 링크 오류 수정 (파일명 불일치)", "done": true },
     { "text": "about.html 핵심 철학 문구 최신화", "done": true },
@@ -13,7 +22,6 @@
     { "text": "커스텀 도메인 연결 검토 (선택)", "done": false }
   ],
   "ai_log": [],
-  "drafts": [],
   "brand": {
     "상호명": "어니스트앤코 (Honest&Co.)",
     "브랜드명": "EXTRACT LIBRARY (엑스트랙트 라이브러리)",
