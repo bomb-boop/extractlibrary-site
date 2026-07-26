@@ -29,14 +29,14 @@
   "products": [
     {
       "name": "EX·001 병풀 클렌징 워터",
-      "price": "26,000원 / 300mL",
+      "price": "22,000원 / 300mL",
       "key_ingredients": "병풀, 과일 컴플렉스, 쇠비름 추출물, 베타인",
       "clinical": "피부자극지수 0.00 (2024.6.12–6.14, N=33)",
       "page": "products/byeongpul-cleansing-water.html"
     },
     {
       "name": "EX·002 어성초 진정 토너",
-      "price": "30,000원 / 300mL",
+      "price": "26,000원 / 300mL",
       "key_ingredients": "어성초, 판테놀, 저분자 히알루론산, 알란토인",
       "clinical": "피부자극지수 0.00 (2024.6.12–6.14, N=33)",
       "page": "products/eoseongcho-toner.html"
