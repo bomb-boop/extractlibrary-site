@@ -151,7 +151,7 @@ function renderDrafts(items) {
         <span class="badge no">${escapeHtml(it.status || 'pending-review')}</span>
       </div>
       <div><strong>${escapeHtml(it.title || '')}</strong></div>
-      ${it.path ? `<div style="color:var(--ink-soft); font-size:0.86rem; margin-top:4px;">${escapeHtml(it.path)}</div>` : ''}
+      ${it.path ? `<div style="font-size:0.86rem; margin-top:4px;"><a href="${escapeHtml(it.path)}" target="_blank" rel="noopener">${escapeHtml(it.path)} →</a></div>` : ''}
     </div>`).join('');
 }
 
