@@ -18,7 +18,7 @@
     { "text": "GitHub Pages 배포 (bomb-boop.github.io/extractlibrary-site)", "done": true },
     { "text": "Google Search Console 사이트 등록 — 사용자 직접 진행 필요 (인증 토큰 발급 후 요청 시 meta 태그 반영)", "done": false },
     { "text": "네이버 서치어드바이저 사이트 등록 — 사용자 직접 진행 필요 (인증 토큰 발급 후 요청 시 meta 태그 반영)", "done": false },
-    { "text": "매일 초안 자동 생성 크론 자동화 연결", "done": false },
+    { "text": "매일 초안 자동 생성 크론 자동화 연결", "done": true },
     { "text": "커스텀 도메인 연결 검토 (선택)", "done": false }
   ],
   "ai_log": [],
