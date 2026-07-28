@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-07-27",
+  "updated_at": "2026-07-28",
   "drafts": [
     {
       "date": "2026-07-26",
@@ -14,6 +14,13 @@
       "title": "세안 후 피부는 왜 예민해질까 — 미산성 pH 5~7의 의미",
       "status": "pending-review",
       "path": "drafts/2026-07-27-skin-ph-balance-after-cleansing.md"
+    },
+    {
+      "date": "2026-07-28",
+      "channel": "sns",
+      "title": "하루의 흔적을 걷어내는 시간, 병풀 클렌징 워터 인스타그램 카피",
+      "status": "pending-review",
+      "path": "drafts/2026-07-28-byeongpul-cleansing-water-recovery-ritual.md"
     }
   ],
   "checklist": [
