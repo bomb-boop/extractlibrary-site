@@ -1,6 +1,13 @@
 {
-  "updated_at": "2026-07-29",
+  "updated_at": "2026-07-30",
   "drafts": [
+    {
+      "date": "2026-07-30",
+      "channel": "sns",
+      "title": "스키니멀리즘 리추얼, 두 단계로 완성하는 하루 — 엑스트랙트 라이브러리 인스타그램 카피",
+      "status": "pending-review",
+      "path": "drafts/2026-07-30-skinimalism-two-step-ritual.md"
+    },
     {
       "date": "2026-07-26",
       "channel": "sns",
