@@ -1,6 +1,13 @@
 {
-  "updated_at": "2026-07-30",
+  "updated_at": "2026-07-31",
   "drafts": [
+    {
+      "date": "2026-07-31",
+      "channel": "blog",
+      "title": "EWG 그린등급, 성분을 고르는 첫 번째 기준",
+      "status": "pending-review",
+      "path": "drafts/2026-07-31-ewg-green-grade-ingredient-screening.md"
+    },
     {
       "date": "2026-07-30",
       "channel": "sns",
