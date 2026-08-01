@@ -1,6 +1,13 @@
 {
-  "updated_at": "2026-07-31",
+  "updated_at": "2026-08-01",
   "drafts": [
+    {
+      "date": "2026-08-01",
+      "channel": "blog",
+      "title": "향에도 근거가 있다 — 두 제품의 아로마테라피 설계",
+      "status": "pending-review",
+      "path": "drafts/2026-08-01-aromatherapy-fragrance-design.md"
+    },
     {
       "date": "2026-07-31",
       "channel": "blog",
