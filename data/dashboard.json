@@ -1,6 +1,13 @@
 {
-  "updated_at": "2026-08-01",
+  "updated_at": "2026-08-02",
   "drafts": [
+    {
+      "date": "2026-08-02",
+      "channel": "sns",
+      "title": "코 위에 30초, 모공 노폐물 케어 팁 — 병풀 클렌징 워터 인스타그램 카피",
+      "status": "pending-review",
+      "path": "drafts/2026-08-02-pore-blackhead-care-tip.md"
+    },
     {
       "date": "2026-08-01",
       "channel": "blog",
