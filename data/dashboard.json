@@ -1,6 +1,13 @@
 {
-  "updated_at": "2026-08-02",
+  "updated_at": "2026-08-03",
   "drafts": [
+    {
+      "date": "2026-08-03",
+      "channel": "blog",
+      "title": "미셀라 기술이란 무엇인가 — 물로 기름을 닦아내는 원리",
+      "status": "pending-review",
+      "path": "drafts/2026-08-03-micellar-technology-cleansing-water.md"
+    },
     {
       "date": "2026-08-02",
       "channel": "sns",
