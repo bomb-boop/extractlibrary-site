@@ -1,6 +1,13 @@
 {
-  "updated_at": "2026-08-04",
+  "updated_at": "2026-08-05",
   "drafts": [
+    {
+      "date": "2026-08-05",
+      "channel": "blog",
+      "title": "판테놀과 저분자 히알루론산 — 에센스 없이 완성되는 보습 원리",
+      "status": "pending-review",
+      "path": "drafts/2026-08-05-panthenol-low-molecular-hyaluronic-acid.md"
+    },
     {
       "date": "2026-08-04",
       "channel": "sns",
