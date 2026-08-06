@@ -1,6 +1,13 @@
 {
-  "updated_at": "2026-08-05",
+  "updated_at": "2026-08-06",
   "drafts": [
+    {
+      "date": "2026-08-06",
+      "channel": "sns",
+      "title": "매일 한 방울, 피부의 기록이 됩니다 — 엑스트랙트 라이브러리 인스타그램 카피",
+      "status": "pending-review",
+      "path": "drafts/2026-08-06-one-drop-a-day-ritual.md"
+    },
     {
       "date": "2026-08-05",
       "channel": "blog",
