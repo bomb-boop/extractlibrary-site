@@ -1,6 +1,13 @@
 {
-  "updated_at": "2026-08-08",
+  "updated_at": "2026-08-09",
   "drafts": [
+    {
+      "date": "2026-08-09",
+      "channel": "blog",
+      "title": "알란토인 — 화려하지 않아서 오래 남은 진정 성분",
+      "status": "pending-review",
+      "path": "drafts/2026-08-09-allantoin-old-soothing-ingredient.md"
+    },
     {
       "date": "2026-08-08",
       "channel": "sns",
