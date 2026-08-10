@@ -1,6 +1,13 @@
 {
-  "updated_at": "2026-08-09",
+  "updated_at": "2026-08-10",
   "drafts": [
+    {
+      "date": "2026-08-10",
+      "channel": "sns",
+      "title": "짙은 메이크업엔 5초, 병풀 클렌징 워터 인스타그램 카피",
+      "status": "pending-review",
+      "path": "drafts/2026-08-10-makeup-melt-five-second-tip.md"
+    },
     {
       "date": "2026-08-09",
       "channel": "blog",
