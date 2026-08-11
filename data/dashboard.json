@@ -1,6 +1,13 @@
 {
-  "updated_at": "2026-08-10",
+  "updated_at": "2026-08-11",
   "drafts": [
+    {
+      "date": "2026-08-11",
+      "channel": "blog",
+      "title": "어성초, 약초에서 스킨케어 성분이 되기까지",
+      "status": "pending-review",
+      "path": "drafts/2026-08-11-eoseongcho-ingredient-science.md"
+    },
     {
       "date": "2026-08-10",
       "channel": "sns",
