@@ -1,6 +1,13 @@
 {
-  "updated_at": "2026-08-12",
+  "updated_at": "2026-08-13",
   "drafts": [
+    {
+      "date": "2026-08-13",
+      "channel": "blog",
+      "title": "병풀 — 상처 치유 식물이 클렌징 워터에 담기기까지",
+      "status": "pending-review",
+      "path": "drafts/2026-08-13-byeongpul-ingredient-science.md"
+    },
     {
       "date": "2026-08-12",
       "channel": "sns",
