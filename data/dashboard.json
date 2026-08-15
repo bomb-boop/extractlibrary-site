@@ -1,6 +1,13 @@
 {
-  "updated_at": "2026-08-14",
+  "updated_at": "2026-08-15",
   "drafts": [
+    {
+      "date": "2026-08-15",
+      "channel": "blog",
+      "title": "과일 컴플렉스란 무엇인가 — 각질을 미는 대신, 정리하는 방식",
+      "status": "pending-review",
+      "path": "drafts/2026-08-15-fruit-complex-gentle-keratin-care.md"
+    },
     {
       "date": "2026-08-14",
       "channel": "sns",
