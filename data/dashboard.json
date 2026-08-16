@@ -1,6 +1,13 @@
 {
-  "updated_at": "2026-08-15",
+  "updated_at": "2026-08-16",
   "drafts": [
+    {
+      "date": "2026-08-16",
+      "channel": "sns",
+      "title": "토너유목민 정착템, 어성초 진정 토너 — 인스타그램 카피",
+      "status": "pending-review",
+      "path": "drafts/2026-08-16-toner-nomad-settle-down.md"
+    },
     {
       "date": "2026-08-15",
       "channel": "blog",
