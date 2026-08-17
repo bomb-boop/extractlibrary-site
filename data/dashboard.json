@@ -1,6 +1,13 @@
 {
-  "updated_at": "2026-08-16",
+  "updated_at": "2026-08-17",
   "drafts": [
+    {
+      "date": "2026-08-17",
+      "channel": "blog",
+      "title": "전성분표 읽는 법 — 성분 순서가 알려주는 것들",
+      "status": "pending-review",
+      "path": "drafts/2026-08-17-how-to-read-ingredient-list.md"
+    },
     {
       "date": "2026-08-16",
       "channel": "sns",
