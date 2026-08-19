@@ -1,6 +1,13 @@
 {
-  "updated_at": "2026-08-18",
+  "updated_at": "2026-08-19",
   "drafts": [
+    {
+      "date": "2026-08-19",
+      "channel": "blog",
+      "title": "무방부가 아니라 안전한 방부 — 10無 클린처방의 보존 설계",
+      "status": "pending-review",
+      "path": "drafts/2026-08-19-preservation-system-in-clean-formula.md"
+    },
     {
       "date": "2026-08-18",
       "channel": "sns",
