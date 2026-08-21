@@ -1,6 +1,13 @@
 {
-  "updated_at": "2026-08-20",
+  "updated_at": "2026-08-21",
   "drafts": [
+    {
+      "date": "2026-08-21",
+      "channel": "blog",
+      "title": "성분이 적을수록 좋다는 말, 사실일까 — 미니멀 포뮬레이션의 기준",
+      "status": "pending-review",
+      "path": "drafts/2026-08-21-minimal-formulation-ingredient-count.md"
+    },
     {
       "date": "2026-08-20",
       "channel": "sns",
