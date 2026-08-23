@@ -1,6 +1,13 @@
 {
-  "updated_at": "2026-08-22",
+  "updated_at": "2026-08-23",
   "drafts": [
+    {
+      "date": "2026-08-23",
+      "channel": "blog",
+      "title": "'저자극'이라는 표시, 무엇을 근거로 삼아야 할까 — 표시·광고 기준과 임상 검증",
+      "status": "pending-review",
+      "path": "drafts/2026-08-23-low-irritation-claim-verification-standard.md"
+    },
     {
       "date": "2026-08-22",
       "channel": "sns",
