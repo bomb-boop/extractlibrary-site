@@ -1,6 +1,13 @@
 {
-  "updated_at": "2026-08-24",
+  "updated_at": "2026-08-25",
   "drafts": [
+    {
+      "date": "2026-08-25",
+      "channel": "blog",
+      "title": "워터에센스란 무엇인가 — 토너와 에센스 사이, 하나의 제형에 담긴 이유",
+      "status": "pending-review",
+      "path": "drafts/2026-08-25-water-essence-formulation-science.md"
+    },
     {
       "date": "2026-08-24",
       "channel": "sns",
