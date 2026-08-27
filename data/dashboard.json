@@ -1,6 +1,13 @@
 {
-  "updated_at": "2026-08-26",
+  "updated_at": "2026-08-27",
   "drafts": [
+    {
+      "date": "2026-08-27",
+      "channel": "blog",
+      "title": "100% 천연향료인데 왜 알레르기 유발성분이 표시될까 — 클린 뷰티와 향료 표시 기준",
+      "status": "pending-review",
+      "path": "drafts/2026-08-27-natural-fragrance-allergen-labeling.md"
+    },
     {
       "date": "2026-08-26",
       "channel": "sns",
