@@ -1,6 +1,13 @@
 {
-  "updated_at": "2026-08-28",
+  "updated_at": "2026-08-29",
   "drafts": [
+    {
+      "date": "2026-08-29",
+      "channel": "blog",
+      "title": "임상 자극 테스트는 실제로 어떻게 진행될까 — 폐쇄첩포시험의 원리",
+      "status": "pending-review",
+      "path": "drafts/2026-08-29-patch-test-methodology-explained.md"
+    },
     {
       "date": "2026-08-28",
       "channel": "sns",
