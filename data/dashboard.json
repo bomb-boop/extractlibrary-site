@@ -1,6 +1,13 @@
 {
-  "updated_at": "2026-08-30",
+  "updated_at": "2026-08-31",
   "drafts": [
+    {
+      "date": "2026-08-31",
+      "channel": "blog",
+      "title": "'클린뷰티'라는 말에는 표준이 없다 — 세 가지 근거로 대신합니다",
+      "status": "pending-review",
+      "path": "drafts/2026-08-31-clean-beauty-undefined-term-three-criteria.md"
+    },
     {
       "date": "2026-08-30",
       "channel": "sns",
