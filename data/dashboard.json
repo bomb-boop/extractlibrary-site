@@ -1,6 +1,13 @@
 {
-  "updated_at": "2026-08-31",
+  "updated_at": "2026-09-01",
   "drafts": [
+    {
+      "date": "2026-09-01",
+      "channel": "blog",
+      "title": "임상시험 대상자 33명, 적은 숫자일까 — 인체적용시험에서 표본 크기가 갖는 의미",
+      "status": "pending-review",
+      "path": "drafts/2026-09-01-clinical-sample-size-thirty-three-meaning.md"
+    },
     {
       "date": "2026-08-31",
       "channel": "blog",
