@@ -1,6 +1,13 @@
 {
-  "updated_at": "2026-09-01",
+  "updated_at": "2026-09-02",
   "drafts": [
+    {
+      "date": "2026-09-02",
+      "channel": "sns",
+      "title": "환절기 피부, 두 단계로 지키는 밸런스 — 엑스트랙트 라이브러리 인스타그램 카피",
+      "status": "pending-review",
+      "path": "drafts/2026-09-02-seasonal-transition-two-step-balance.md"
+    },
     {
       "date": "2026-09-01",
       "channel": "blog",
