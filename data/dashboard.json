@@ -1,6 +1,13 @@
 {
-  "updated_at": "2026-09-02",
+  "updated_at": "2026-09-03",
   "drafts": [
+    {
+      "date": "2026-09-03",
+      "channel": "blog",
+      "title": "피부자극지수는 어떻게 매겨질까 — 0.00이라는 숫자 뒤의 채점 기준",
+      "status": "pending-review",
+      "path": "drafts/2026-09-03-irritation-index-scoring-method.md"
+    },
     {
       "date": "2026-09-02",
       "channel": "sns",
