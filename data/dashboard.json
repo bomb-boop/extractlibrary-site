@@ -1,6 +1,13 @@
 {
-  "updated_at": "2026-09-04",
+  "updated_at": "2026-09-05",
   "drafts": [
+    {
+      "date": "2026-09-05",
+      "channel": "blog",
+      "title": "왜 자사 평가가 아니라 제3기관 시험이어야 할까 — 임상 데이터의 독립성이라는 조건",
+      "status": "pending-review",
+      "path": "drafts/2026-09-05-third-party-clinical-testing-independence.md"
+    },
     {
       "date": "2026-09-04",
       "channel": "sns",
