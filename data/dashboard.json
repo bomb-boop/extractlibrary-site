@@ -1,6 +1,13 @@
 {
-  "updated_at": "2026-09-05",
+  "updated_at": "2026-09-06",
   "drafts": [
+    {
+      "date": "2026-09-06",
+      "channel": "sns",
+      "title": "후기가 증명하는 변화, 어성초 진정 토너 — 엑스트랙트 라이브러리 인스타그램 카피",
+      "status": "pending-review",
+      "path": "drafts/2026-09-06-eoseongcho-toner-review-proof.md"
+    },
     {
       "date": "2026-09-05",
       "channel": "blog",
