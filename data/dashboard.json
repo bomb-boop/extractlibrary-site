@@ -1,6 +1,13 @@
 {
-  "updated_at": "2026-09-06",
+  "updated_at": "2026-09-07",
   "drafts": [
+    {
+      "date": "2026-09-07",
+      "channel": "blog",
+      "title": "1000ppm이라는 숫자 — 함량을 굳이 공개하는 이유",
+      "status": "pending-review",
+      "path": "drafts/2026-09-07-ingredient-concentration-ppm-disclosure.md"
+    },
     {
       "date": "2026-09-06",
       "channel": "sns",
