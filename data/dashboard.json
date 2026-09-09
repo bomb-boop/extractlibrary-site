@@ -1,6 +1,13 @@
 {
-  "updated_at": "2026-09-08",
+  "updated_at": "2026-09-09",
   "drafts": [
+    {
+      "date": "2026-09-09",
+      "channel": "blog",
+      "title": "피부장벽이 무너지면 생기는 일 — 경피수분손실(TEWL)이라는 지표",
+      "status": "pending-review",
+      "path": "drafts/2026-09-09-skin-barrier-tewl-explained.md"
+    },
     {
       "date": "2026-09-08",
       "channel": "sns",
