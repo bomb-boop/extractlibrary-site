@@ -1,6 +1,13 @@
 {
-  "updated_at": "2026-09-09",
+  "updated_at": "2026-09-10",
   "drafts": [
+    {
+      "date": "2026-09-10",
+      "channel": "sns",
+      "title": "당기지 않는 이유, 미산성 두 단계 루틴 — 엑스트랙트 라이브러리 인스타그램 카피",
+      "status": "pending-review",
+      "path": "drafts/2026-09-10-ph-balance-no-tightness-routine.md"
+    },
     {
       "date": "2026-09-09",
       "channel": "blog",
