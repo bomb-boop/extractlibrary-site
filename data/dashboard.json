@@ -1,6 +1,13 @@
 {
-  "updated_at": "2026-09-10",
+  "updated_at": "2026-09-11",
   "drafts": [
+    {
+      "date": "2026-09-11",
+      "channel": "blog",
+      "title": "이중세안, 항상 두 번 씻어야 할까 — 필요한 순간과 아닌 순간",
+      "status": "pending-review",
+      "path": "drafts/2026-09-11-double-cleansing-when-is-it-necessary.md"
+    },
     {
       "date": "2026-09-10",
       "channel": "sns",
