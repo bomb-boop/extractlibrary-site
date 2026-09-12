@@ -1,6 +1,13 @@
 {
-  "updated_at": "2026-09-11",
+  "updated_at": "2026-09-12",
   "drafts": [
+    {
+      "date": "2026-09-12",
+      "channel": "sns",
+      "title": "숫자로 공개하는 함량, 어성초 1000ppm — 엑스트랙트 라이브러리 인스타그램 카피",
+      "status": "pending-review",
+      "path": "drafts/2026-09-12-heartleaf-1000ppm-concentration-transparency.md"
+    },
     {
       "date": "2026-09-11",
       "channel": "blog",
