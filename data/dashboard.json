@@ -1,6 +1,13 @@
 {
-  "updated_at": "2026-09-12",
+  "updated_at": "2026-09-13",
   "drafts": [
+    {
+      "date": "2026-09-13",
+      "channel": "blog",
+      "title": "미산성이라는 숫자는 어떻게 측정될까 — 화장품 pH 측정의 조건",
+      "status": "pending-review",
+      "path": "drafts/2026-09-13-cosmetic-ph-measurement-method.md"
+    },
     {
       "date": "2026-09-12",
       "channel": "sns",
