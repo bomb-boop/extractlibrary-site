@@ -1,6 +1,13 @@
 {
-  "updated_at": "2026-09-13",
+  "updated_at": "2026-09-14",
   "drafts": [
+    {
+      "date": "2026-09-14",
+      "channel": "sns",
+      "title": "아침에도 이어지는 리추얼, 두 단계 모닝케어 — 엑스트랙트 라이브러리 인스타그램 카피",
+      "status": "pending-review",
+      "path": "drafts/2026-09-14-morning-ritual-two-step-routine.md"
+    },
     {
       "date": "2026-09-13",
       "channel": "blog",
