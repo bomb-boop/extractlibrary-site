@@ -1,6 +1,13 @@
 {
-  "updated_at": "2026-09-14",
+  "updated_at": "2026-09-15",
   "drafts": [
+    {
+      "date": "2026-09-15",
+      "channel": "blog",
+      "title": "제품이 선반에 오르기 전 — 화장품 안정성시험이 확인하는 것들",
+      "status": "pending-review",
+      "path": "drafts/2026-09-15-cosmetic-stability-testing-explained.md"
+    },
     {
       "date": "2026-09-14",
       "channel": "sns",
