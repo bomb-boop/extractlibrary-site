@@ -1,6 +1,13 @@
 {
-  "updated_at": "2026-09-16",
+  "updated_at": "2026-09-17",
   "drafts": [
+    {
+      "date": "2026-09-17",
+      "channel": "blog",
+      "title": "용기에 적힌 12M이라는 숫자 — PAO 표시가 알려주는 것",
+      "status": "pending-review",
+      "path": "drafts/2026-09-17-pao-period-after-opening-explained.md"
+    },
     {
       "date": "2026-09-16",
       "channel": "sns",
