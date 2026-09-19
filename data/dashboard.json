@@ -1,6 +1,13 @@
 {
-  "updated_at": "2026-09-18",
+  "updated_at": "2026-09-19",
   "drafts": [
+    {
+      "date": "2026-09-19",
+      "channel": "blog",
+      "title": "공기와 만나는 순간 — 화장품 용기가 성분을 지키는 방식",
+      "status": "pending-review",
+      "path": "drafts/2026-09-19-airless-pump-oxidation-protection.md"
+    },
     {
       "date": "2026-09-18",
       "channel": "sns",
