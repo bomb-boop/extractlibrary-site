@@ -1,6 +1,13 @@
 {
-  "updated_at": "2026-09-20",
+  "updated_at": "2026-09-21",
   "drafts": [
+    {
+      "date": "2026-09-21",
+      "channel": "blog",
+      "title": "왜 임상시험은 사흘 동안 진행됐을까 — 첩포시험 판독 시점이 갖는 의미",
+      "status": "pending-review",
+      "path": "drafts/2026-09-21-clinical-test-reading-timepoint-design.md"
+    },
     {
       "date": "2026-09-20",
       "channel": "sns",
