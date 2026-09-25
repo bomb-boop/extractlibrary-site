@@ -1,6 +1,13 @@
 {
-  "updated_at": "2026-09-24",
+  "updated_at": "2026-09-25",
   "drafts": [
+    {
+      "date": "2026-09-25",
+      "channel": "blog",
+      "title": "'기능성화장품'이 아닌데 왜 임상시험을 했을까 — 일반 화장품과 기능성화장품의 경계",
+      "status": "pending-review",
+      "path": "drafts/2026-09-25-functional-cosmetic-vs-general-cosmetic.md"
+    },
     {
       "date": "2026-09-24",
       "channel": "sns",
