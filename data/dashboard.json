@@ -1,6 +1,13 @@
 {
-  "updated_at": "2026-09-26",
+  "updated_at": "2026-09-27",
   "drafts": [
+    {
+      "date": "2026-09-27",
+      "channel": "blog",
+      "title": "성분표만으로는 보이지 않는 것 — 우수화장품 제조기준(CGMP)이라는 조건",
+      "status": "pending-review",
+      "path": "drafts/2026-09-27-cgmp-manufacturing-quality-standard.md"
+    },
     {
       "date": "2026-09-26",
       "channel": "sns",
