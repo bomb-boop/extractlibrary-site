@@ -1,6 +1,13 @@
 {
-  "updated_at": "2026-09-28",
+  "updated_at": "2026-09-29",
   "drafts": [
+    {
+      "date": "2026-09-29",
+      "channel": "blog",
+      "title": "방부력이 좋아도 확인하는 것 — 미생물한도시험이라는 마지막 관문",
+      "status": "pending-review",
+      "path": "drafts/2026-09-29-microbial-limit-test-batch-release.md"
+    },
     {
       "date": "2026-09-28",
       "channel": "sns",
