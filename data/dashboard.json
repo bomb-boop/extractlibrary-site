@@ -1,6 +1,13 @@
 {
-  "updated_at": "2026-09-30",
+  "updated_at": "2026-10-01",
   "drafts": [
+    {
+      "date": "2026-10-01",
+      "channel": "blog",
+      "title": "시험을 시작하기 전에 거치는 심사 — IRB 승인이라는 조건",
+      "status": "pending-review",
+      "path": "drafts/2026-10-01-irb-review-before-clinical-test.md"
+    },
     {
       "date": "2026-09-30",
       "channel": "sns",
