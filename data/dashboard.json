@@ -1,6 +1,13 @@
 {
-  "updated_at": "2026-10-01",
+  "updated_at": "2026-10-02",
   "drafts": [
+    {
+      "date": "2026-10-02",
+      "channel": "sns",
+      "title": "추출하다, 그리고 지식의 보고 — 'Extracted from Nature.'의 의미, 엑스트랙트 라이브러리 인스타그램 카피",
+      "status": "pending-review",
+      "path": "drafts/2026-10-02-extracted-from-nature-slogan-meaning.md"
+    },
     {
       "date": "2026-10-01",
       "channel": "blog",
