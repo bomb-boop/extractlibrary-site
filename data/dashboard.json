@@ -1,6 +1,13 @@
 {
-  "updated_at": "2026-10-02",
+  "updated_at": "2026-10-03",
   "drafts": [
+    {
+      "date": "2026-10-03",
+      "channel": "blog",
+      "title": "오일인데 물처럼 맑습니다 — 가용화 기술이 향료를 녹이는 원리",
+      "status": "pending-review",
+      "path": "drafts/2026-10-03-fragrance-solubilization-technology.md"
+    },
     {
       "date": "2026-10-02",
       "channel": "sns",
