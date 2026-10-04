@@ -1,6 +1,13 @@
 {
-  "updated_at": "2026-10-03",
+  "updated_at": "2026-10-04",
   "drafts": [
+    {
+      "date": "2026-10-04",
+      "channel": "sns",
+      "title": "오늘도, 한 방울을 추출합니다 — 엑스트랙트 라이브러리 인스타그램 카피",
+      "status": "pending-review",
+      "path": "drafts/2026-10-04-daily-extraction-ritual-pump.md"
+    },
     {
       "date": "2026-10-03",
       "channel": "blog",
