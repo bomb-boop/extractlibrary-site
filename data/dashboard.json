@@ -1,6 +1,13 @@
 {
-  "updated_at": "2026-10-04",
+  "updated_at": "2026-10-05",
   "drafts": [
+    {
+      "date": "2026-10-05",
+      "channel": "blog",
+      "title": "성분명은 어떻게 정해질까 — INCI 표준 명명법과 전성분표의 신뢰성",
+      "status": "pending-review",
+      "path": "drafts/2026-10-05-inci-standard-naming-ingredient-list-trust.md"
+    },
     {
       "date": "2026-10-04",
       "channel": "sns",
