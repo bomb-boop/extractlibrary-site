@@ -1,6 +1,13 @@
 {
-  "updated_at": "2026-10-05",
+  "updated_at": "2026-10-06",
   "drafts": [
+    {
+      "date": "2026-10-06",
+      "channel": "sns",
+      "title": "새 제품을 쓰기 전, 먼저 작게 발라보는 습관 — 엑스트랙트 라이브러리 인스타그램 카피",
+      "status": "pending-review",
+      "path": "drafts/2026-10-06-patch-test-habit-before-new-skincare.md"
+    },
     {
       "date": "2026-10-05",
       "channel": "blog",
