@@ -1,6 +1,13 @@
 {
-  "updated_at": "2026-10-06",
+  "updated_at": "2026-10-07",
   "drafts": [
+    {
+      "date": "2026-10-07",
+      "channel": "blog",
+      "title": "33명은 어떻게 선정됐을까 — 임상시험 참여자의 선정·제외기준",
+      "status": "pending-review",
+      "path": "drafts/2026-10-07-clinical-trial-participant-selection-criteria.md"
+    },
     {
       "date": "2026-10-06",
       "channel": "sns",
