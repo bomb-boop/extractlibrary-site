@@ -1,6 +1,13 @@
 {
-  "updated_at": "2026-10-08",
+  "updated_at": "2026-10-09",
   "drafts": [
+    {
+      "date": "2026-10-09",
+      "channel": "blog",
+      "title": "병 뒤에 적힌 숫자 하나 — 제조번호가 말해주는 것",
+      "status": "pending-review",
+      "path": "drafts/2026-10-09-batch-number-traceability.md"
+    },
     {
       "date": "2026-10-08",
       "channel": "sns",
