@@ -1,6 +1,13 @@
 {
-  "updated_at": "2026-10-10",
+  "updated_at": "2026-10-11",
   "drafts": [
+    {
+      "date": "2026-10-11",
+      "channel": "blog",
+      "title": "피부자극시험과 알러지시험은 다릅니다 — 숫자가 말하지 않는 것",
+      "status": "pending-review",
+      "path": "drafts/2026-10-11-irritation-test-vs-allergy-sensitization-difference.md"
+    },
     {
       "date": "2026-10-10",
       "channel": "sns",
