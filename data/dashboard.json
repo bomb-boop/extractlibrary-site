@@ -1,6 +1,13 @@
 {
-  "updated_at": "2026-10-11",
+  "updated_at": "2026-10-12",
   "drafts": [
+    {
+      "date": "2026-10-12",
+      "channel": "sns",
+      "title": "한 번 누르는 그 양만큼, 끝까지 — 펌프 용기 이야기, 인스타그램 카피",
+      "status": "pending-review",
+      "path": "drafts/2026-10-12-airless-pump-freshness-sns.md"
+    },
     {
       "date": "2026-10-11",
       "channel": "blog",
