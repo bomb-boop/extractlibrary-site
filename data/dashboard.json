@@ -1,6 +1,13 @@
 {
-  "updated_at": "2026-10-12",
+  "updated_at": "2026-10-13",
   "drafts": [
+    {
+      "date": "2026-10-13",
+      "channel": "blog",
+      "title": "평균 0.00 뒤에 숨은 개인차 — 임상 데이터를 읽을 때 놓치기 쉬운 것",
+      "status": "pending-review",
+      "path": "drafts/2026-10-13-clinical-data-individual-variation-vs-average.md"
+    },
     {
       "date": "2026-10-12",
       "channel": "sns",
