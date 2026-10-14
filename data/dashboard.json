@@ -1,6 +1,13 @@
 {
-  "updated_at": "2026-10-13",
+  "updated_at": "2026-10-14",
   "drafts": [
+    {
+      "date": "2026-10-14",
+      "channel": "sns",
+      "title": "병에 붙은 작은 코드, EX·001과 EX·002 — 엑스트랙트 라이브러리 인스타그램 카피",
+      "status": "pending-review",
+      "path": "drafts/2026-10-14-product-code-ex001-ex002-library-system.md"
+    },
     {
       "date": "2026-10-13",
       "channel": "blog",
