@@ -1,6 +1,13 @@
 {
-  "updated_at": "2026-10-14",
+  "updated_at": "2026-10-15",
   "drafts": [
+    {
+      "date": "2026-10-15",
+      "channel": "blog",
+      "title": "자극시험에는 비교군이 없다 — '자가대조' 설계가 뜻하는 것",
+      "status": "pending-review",
+      "path": "drafts/2026-10-15-patch-test-self-control-design.md"
+    },
     {
       "date": "2026-10-14",
       "channel": "sns",
