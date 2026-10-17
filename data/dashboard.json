@@ -1,6 +1,13 @@
 {
-  "updated_at": "2026-10-16",
+  "updated_at": "2026-10-17",
   "drafts": [
+    {
+      "date": "2026-10-17",
+      "channel": "blog",
+      "title": "'추출물'과 '수(水)', 같은 식물인데 표기가 다른 이유",
+      "status": "pending-review",
+      "path": "drafts/2026-10-17-extract-vs-water-ingredient-labeling-difference.md"
+    },
     {
       "date": "2026-10-16",
       "channel": "sns",
