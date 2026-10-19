@@ -1,6 +1,13 @@
 {
-  "updated_at": "2026-10-18",
+  "updated_at": "2026-10-19",
   "drafts": [
+    {
+      "date": "2026-10-19",
+      "channel": "blog",
+      "title": "법이 금지한 성분과 브랜드가 스스로 뺀 성분 — 배합금지·배합한도성분과 10無 클린처방의 차이",
+      "status": "pending-review",
+      "path": "drafts/2026-10-19-banned-ingredients-vs-ten-free-standard.md"
+    },
     {
       "date": "2026-10-18",
       "channel": "sns",
