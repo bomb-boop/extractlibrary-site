@@ -1,6 +1,13 @@
 {
-  "updated_at": "2026-10-19",
+  "updated_at": "2026-10-20",
   "drafts": [
+    {
+      "date": "2026-10-20",
+      "channel": "sns",
+      "title": "걷어냄에서 채움까지, 하나의 흐름 — EXTRACT LIBRARY 인스타그램 카피",
+      "status": "pending-review",
+      "path": "drafts/2026-10-20-recovery-to-calm-ritual-narrative.md"
+    },
     {
       "date": "2026-10-19",
       "channel": "blog",
