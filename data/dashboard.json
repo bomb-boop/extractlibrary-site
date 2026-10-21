@@ -1,6 +1,13 @@
 {
-  "updated_at": "2026-10-20",
+  "updated_at": "2026-10-21",
   "drafts": [
+    {
+      "date": "2026-10-21",
+      "channel": "blog",
+      "title": "임상시험을 통과한 뒤에도 끝나지 않는 일 — 화장품 유해사례 보고 의무",
+      "status": "pending-review",
+      "path": "drafts/2026-10-21-post-market-adverse-event-reporting.md"
+    },
     {
       "date": "2026-10-20",
       "channel": "sns",
