@@ -1,6 +1,13 @@
 {
-  "updated_at": "2026-10-22",
+  "updated_at": "2026-10-23",
   "drafts": [
+    {
+      "date": "2026-10-23",
+      "channel": "blog",
+      "title": "방부제를 뺀 자리에도 필요한 시험 — 보존력시험이 확인하는 것",
+      "status": "pending-review",
+      "path": "drafts/2026-10-23-preservative-efficacy-challenge-test.md"
+    },
     {
       "date": "2026-10-22",
       "channel": "sns",
