@@ -1,6 +1,13 @@
 {
-  "updated_at": "2026-10-23",
+  "updated_at": "2026-10-24",
   "drafts": [
+    {
+      "date": "2026-10-24",
+      "channel": "sns",
+      "title": "바를 때만 촉촉하고 금세 건조해진다면 — EXTRACT LIBRARY 인스타그램 카피",
+      "status": "pending-review",
+      "path": "drafts/2026-10-24-why-existing-products-fell-short.md"
+    },
     {
       "date": "2026-10-23",
       "channel": "blog",
