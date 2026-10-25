@@ -1,6 +1,13 @@
 {
-  "updated_at": "2026-10-24",
+  "updated_at": "2026-10-25",
   "drafts": [
+    {
+      "date": "2026-10-25",
+      "channel": "blog",
+      "title": "눈가림 없는 임상시험 — 피부자극시험이 오픈라벨로 진행되는 이유",
+      "status": "pending-review",
+      "path": "drafts/2026-10-25-open-label-irritation-test-design.md"
+    },
     {
       "date": "2026-10-24",
       "channel": "sns",
