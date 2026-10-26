@@ -1,6 +1,13 @@
 {
-  "updated_at": "2026-10-25",
+  "updated_at": "2026-10-26",
   "drafts": [
+    {
+      "date": "2026-10-26",
+      "channel": "sns",
+      "title": "같은 기간, 같은 33명에게 — 두 제품이 함께 받은 임상검증, EXTRACT LIBRARY 인스타그램 카피",
+      "status": "pending-review",
+      "path": "drafts/2026-10-26-dual-product-clinical-verification.md"
+    },
     {
       "date": "2026-10-25",
       "channel": "blog",
