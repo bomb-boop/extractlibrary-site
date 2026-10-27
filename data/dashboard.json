@@ -1,6 +1,13 @@
 {
-  "updated_at": "2026-10-26",
+  "updated_at": "2026-10-27",
   "drafts": [
+    {
+      "date": "2026-10-27",
+      "channel": "blog",
+      "title": "성분표 옆, 작게 적힌 또 하나의 이름 — 책임판매업자가 지는 책임",
+      "status": "pending-review",
+      "path": "drafts/2026-10-27-marketing-authorization-holder-responsibility.md"
+    },
     {
       "date": "2026-10-26",
       "channel": "sns",
