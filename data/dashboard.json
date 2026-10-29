@@ -1,6 +1,13 @@
 {
-  "updated_at": "2026-10-28",
+  "updated_at": "2026-10-29",
   "drafts": [
+    {
+      "date": "2026-10-29",
+      "channel": "blog",
+      "title": "용기 뒷면의 작은 글자들 — '사용상의 주의사항'이 담아야 하는 것",
+      "status": "pending-review",
+      "path": "drafts/2026-10-29-cosmetic-caution-statement-disclosure.md"
+    },
     {
       "date": "2026-10-28",
       "channel": "sns",
