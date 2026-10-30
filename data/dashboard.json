@@ -1,6 +1,13 @@
 {
-  "updated_at": "2026-10-29",
+  "updated_at": "2026-10-30",
   "drafts": [
+    {
+      "date": "2026-10-30",
+      "channel": "sns",
+      "title": "전성분표 옆에 적힌 한 문장 — 'Extracted from Nature.', 엑스트랙트 라이브러리 인스타그램 카피",
+      "status": "pending-review",
+      "path": "drafts/2026-10-30-ingredient-list-slogan-evidence.md"
+    },
     {
       "date": "2026-10-29",
       "channel": "blog",
