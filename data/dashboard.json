@@ -1,6 +1,13 @@
 {
-  "updated_at": "2026-10-30",
+  "updated_at": "2026-10-31",
   "drafts": [
+    {
+      "date": "2026-10-31",
+      "channel": "blog",
+      "title": "모든 시험기관이 같은 자격을 갖춘 것은 아닙니다 — 피부자극시험기관의 적격성이라는 조건",
+      "status": "pending-review",
+      "path": "drafts/2026-10-31-test-institute-qualification-standard.md"
+    },
     {
       "date": "2026-10-30",
       "channel": "sns",
