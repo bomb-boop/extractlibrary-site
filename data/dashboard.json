@@ -1,6 +1,27 @@
 {
-  "updated_at": "2026-10-31",
+  "updated_at": "2026-11-03",
   "drafts": [
+    {
+      "date": "2026-11-03",
+      "channel": "blog",
+      "title": "느낌으로 말하는 '민감성 피부', 임상에서는 어떻게 정의할까",
+      "status": "pending-review",
+      "path": "drafts/2026-11-03-sensitive-skin-clinical-definition.md"
+    },
+    {
+      "date": "2026-11-02",
+      "channel": "sns",
+      "title": "난방이 시작되면 피부가 먼저 압니다 — 어성초 진정 토너, 엑스트랙트 라이브러리 인스타그램 카피",
+      "status": "pending-review",
+      "path": "drafts/2026-11-02-heating-season-dryness-care.md"
+    },
+    {
+      "date": "2026-11-01",
+      "channel": "blog",
+      "title": "피부에도 생태계가 있다 — 상재균과 저자극 포뮬레이션의 관계",
+      "status": "pending-review",
+      "path": "drafts/2026-11-01-skin-microbiome-minimal-formulation.md"
+    },
     {
       "date": "2026-10-31",
       "channel": "blog",
