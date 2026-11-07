@@ -1,6 +1,13 @@
 {
-  "updated_at": "2026-11-06",
+  "updated_at": "2026-11-07",
   "drafts": [
+    {
+      "date": "2026-11-07",
+      "channel": "blog",
+      "title": "성분은 왜 그 순서로 적혀 있을까 — 전성분표 표기 순서 규칙",
+      "status": "pending-review",
+      "path": "drafts/2026-11-07-ingredient-list-descending-order-rule.md"
+    },
     {
       "date": "2026-11-06",
       "channel": "sns",
