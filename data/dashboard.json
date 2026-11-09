@@ -1,6 +1,13 @@
 {
-  "updated_at": "2026-11-08",
+  "updated_at": "2026-11-09",
   "drafts": [
+    {
+      "date": "2026-11-09",
+      "channel": "blog",
+      "title": "성분을 많이 넣을수록 좋을까 — 유효농도라는 개념",
+      "status": "pending-review",
+      "path": "drafts/2026-11-09-effective-concentration-diminishing-returns.md"
+    },
     {
       "date": "2026-11-08",
       "channel": "sns",
