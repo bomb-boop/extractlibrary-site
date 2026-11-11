@@ -1,6 +1,13 @@
 {
-  "updated_at": "2026-11-10",
+  "updated_at": "2026-11-11",
   "drafts": [
+    {
+      "date": "2026-11-11",
+      "channel": "blog",
+      "title": "효능을 올리는 대신 자극을 낮추기로 한 선택 — 포뮬레이션의 우선순위라는 문제",
+      "status": "pending-review",
+      "path": "drafts/2026-11-11-efficacy-vs-irritation-formulation-priority.md"
+    },
     {
       "date": "2026-11-10",
       "channel": "sns",
