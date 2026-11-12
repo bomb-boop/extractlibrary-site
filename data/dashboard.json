@@ -1,6 +1,13 @@
 {
-  "updated_at": "2026-11-11",
+  "updated_at": "2026-11-12",
   "drafts": [
+    {
+      "date": "2026-11-12",
+      "channel": "sns",
+      "title": "연말에 건네는 선물, 저자극이라는 근거 — EXTRACT LIBRARY 인스타그램 카피",
+      "status": "pending-review",
+      "path": "drafts/2026-11-12-year-end-gift-two-step-set.md"
+    },
     {
       "date": "2026-11-11",
       "channel": "blog",
