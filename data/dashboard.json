@@ -1,6 +1,13 @@
 {
-  "updated_at": "2026-11-12",
+  "updated_at": "2026-11-13",
   "drafts": [
+    {
+      "date": "2026-11-13",
+      "channel": "blog",
+      "title": "성분을 전부 적는 일, 원래는 의무가 아니었습니다 — 전성분표시제 도입이 바꿔놓은 것",
+      "status": "pending-review",
+      "path": "drafts/2026-11-13-full-ingredient-disclosure-history.md"
+    },
     {
       "date": "2026-11-12",
       "channel": "sns",
