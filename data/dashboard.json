@@ -1,6 +1,13 @@
 {
-  "updated_at": "2026-11-14",
+  "updated_at": "2026-11-15",
   "drafts": [
+    {
+      "date": "2026-11-15",
+      "channel": "blog",
+      "title": "'무첨가'라는 말, 무엇으로 증명할까 — 표시·광고 실증 가이드라인과 10無 클린처방",
+      "status": "pending-review",
+      "path": "drafts/2026-11-15-free-from-claim-substantiation-standard.md"
+    },
     {
       "date": "2026-11-14",
       "channel": "sns",
