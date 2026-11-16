@@ -1,6 +1,13 @@
 {
-  "updated_at": "2026-11-15",
+  "updated_at": "2026-11-16",
   "drafts": [
+    {
+      "date": "2026-11-16",
+      "channel": "sns",
+      "title": "세안 후 20초, 당기는지 먼저 확인해보세요 — EXTRACT LIBRARY 인스타그램 카피",
+      "status": "pending-review",
+      "path": "drafts/2026-11-16-post-cleansing-20-second-check.md"
+    },
     {
       "date": "2026-11-15",
       "channel": "blog",
