@@ -1,6 +1,13 @@
 {
-  "updated_at": "2026-11-17",
+  "updated_at": "2026-11-18",
   "drafts": [
+    {
+      "date": "2026-11-18",
+      "channel": "sns",
+      "title": "손등에 먼저, 새 제품을 맞이하는 습관 — EXTRACT LIBRARY 인스타그램 카피",
+      "status": "pending-review",
+      "path": "drafts/2026-11-18-home-patch-test-habit.md"
+    },
     {
       "date": "2026-11-17",
       "channel": "blog",
