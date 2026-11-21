@@ -1,6 +1,13 @@
 {
-  "updated_at": "2026-11-20",
+  "updated_at": "2026-11-21",
   "drafts": [
+    {
+      "date": "2026-11-21",
+      "channel": "blog",
+      "title": "동물실험을 하지 않았다는 것과, 사람에게 확인했다는 것 — 크루얼티프리와 임상 피부자극시험의 차이",
+      "status": "pending-review",
+      "path": "drafts/2026-11-21-cruelty-free-vs-human-clinical-test-distinction.md"
+    },
     {
       "date": "2026-11-20",
       "channel": "sns",
