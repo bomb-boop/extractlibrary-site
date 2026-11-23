@@ -1,6 +1,13 @@
 {
-  "updated_at": "2026-11-22",
+  "updated_at": "2026-11-23",
   "drafts": [
+    {
+      "date": "2026-11-23",
+      "channel": "blog",
+      "title": "'저자극'과 '무자극'은 다른 말입니다",
+      "status": "pending-review",
+      "path": "drafts/2026-11-23-absolute-expression-vs-conditional-irritation-claim.md"
+    },
     {
       "date": "2026-11-22",
       "channel": "sns",
