@@ -1,6 +1,13 @@
 {
-  "updated_at": "2026-11-23",
+  "updated_at": "2026-11-24",
   "drafts": [
+    {
+      "date": "2026-11-24",
+      "channel": "sns",
+      "title": "한 해의 기록을 돌아보는 계절 — EXTRACT LIBRARY 인스타그램 카피",
+      "status": "pending-review",
+      "path": "drafts/2026-11-24-year-end-skin-record-reflection.md"
+    },
     {
       "date": "2026-11-23",
       "channel": "blog",
