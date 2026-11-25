@@ -1,6 +1,13 @@
 {
-  "updated_at": "2026-11-24",
+  "updated_at": "2026-11-25",
   "drafts": [
+    {
+      "date": "2026-11-25",
+      "channel": "blog",
+      "title": "유화제를 줄이면 달라지는 것 — 워터 타입 포뮬러가 저자극을 설계하는 방식",
+      "status": "pending-review",
+      "path": "drafts/2026-11-25-minimal-emulsifier-water-type-formulation.md"
+    },
     {
       "date": "2026-11-24",
       "channel": "sns",
