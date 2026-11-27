@@ -1,6 +1,13 @@
 {
-  "updated_at": "2026-11-26",
+  "updated_at": "2026-11-27",
   "drafts": [
+    {
+      "date": "2026-11-27",
+      "channel": "blog",
+      "title": "왜 클렌징 워터는 뿌옇고, 토너는 맑을까 — 무착색 포뮬러가 보여주는 제형의 과학",
+      "status": "pending-review",
+      "path": "drafts/2026-11-27-colorless-formula-texture-science.md"
+    },
     {
       "date": "2026-11-26",
       "channel": "sns",
